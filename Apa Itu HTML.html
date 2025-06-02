@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belajar HTML dasar bersama Z-SH4DOWSPEECH">
+    <title>Apaitu HTML? - Z-SH4DOWSPEECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s, color 0.5s;
+        }
+        header {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #00ffff;
+        }
+        .toggle-mode {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #00ffff;
+            border: none;
+            color: #000;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        h2 {
+            color: #00ffcc;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0,0,0,0.4);
+            color: #bbb;
+            margin-top: 50px;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .quiz {
+            background-color: #111;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .quiz h3 {
+            color: #00ffcc;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00ffff;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 50%;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            main {
+                margin: 15px;
+            }
+            .toggle-mode {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+        .light-mode {
+            background: #f4f4f4;
+            color: #000;
+        }
+        .light-mode header, .light-mode footer {
+            background-color: #ddd;
+            color: #000;
+        }
+        .light-mode a {
+            color: #006666;
+        }
+        .light-mode main {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-mode" onclick="toggleMode()">Ganti Mode 🌙</button>
+
+    <header>
+        <h1><i class="fas fa-code"></i> Apaitu HTML?</h1>
+        <p>Website ini dibuat oleh <strong>Z-SH4DOWSPEECH</strong></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>📘 Apa itu HTML?</h2>
+            <p>HTML (HyperText Markup Language) adalah bahasa standar yang digunakan untuk membuat dan menyusun halaman web. HTML memungkinkan kita untuk menambahkan teks, gambar, video, tautan, dan elemen-elemen lainnya dalam sebuah halaman web.</p>
+        </section>
+
+        <section>
+            <h2>🛠️ Fungsi HTML</h2>
+            <ul>
+                <li>Membuat struktur dasar halaman web</li>
+                <li>Menentukan elemen seperti heading, paragraf, dan daftar</li>
+                <li>Menambahkan gambar dan multimedia</li>
+                <li>Membuat tautan antar halaman atau situs</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📄 Contoh Kode HTML Sederhana</h2>
+            <pre style="background:#111; padding:15px; border-radius:8px; overflow:auto;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Halaman Pertama Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <section class="quiz">
+            <h3>🧠 Quiz Singkat</h3>
+            <p><strong>Apa tag HTML untuk membuat paragraf?</strong></p>
+            <ul>
+                <li>A. &lt;html&gt;</li>
+                <li><strong>B. &lt;p&gt; ✅</strong></li>
+                <li>C. &lt;div&gt;</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🔗 Pelajari Lebih Lanjut</h2>
+            <p><a href="https://developer.mozilla.org/id/docs/Web/HTML" target="_blank">Baca di MDN Web Docs</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Z-SH4DOWSPEECH | Semua Hak Dilindungi</p>
+    </footer>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆️</button>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+</body>
+</html>
